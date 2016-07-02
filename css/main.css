@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:"Microsoft YaHei", Verdana, Geneva, sans-serif;
+    text-align: center;
+}
+input, textarea {
+    background: #FCFCFC;
+    border: 1px solid lightgray;
+    padding: 3px;
+}
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+.table{
+    width: 100%;
+}
+.table td{
+    padding: 20px 10px;
+    font-size: 20px;
+}
+.table-a{
+    width: 80px;
+}
+.table-b>div{
+    text-align: left;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    overflow: hidden;
+    width: 752px;
+    /*box-sizing: border-box;*/
+}
+.table-c>div{
+    text-align: right;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    overflow: hidden;
+    width: 752px;
+    /*box-sizing: border-box;*/
+}
+.dataA,.dataB{
+    height: 30px;
+    width: 0;
+}
+.dataA{
+    background-color: yellow;
+    background: url(../img/blue.png) repeat-x;
+    background-size: 250px 100%;
+}
+.dataB{
+    background-color: green;
+    background: url(../img/orange.png) repeat-x;
+    background-size: 250px 100%;
+    margin-left: 752px; 
+}
+.table .table-conf{
+    padding: 0;
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+.threadA{
+
+}
+.threadB h1{
+    float: right;
+}
+.threadB:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.warn{
+    color: orange;
+}
+.failed{
+    color: red;
+}
+.success{
+    color: green;
+}

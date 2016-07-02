@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="LFX">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ethernet帧的发送过程模拟</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <table class="table">
+                <tr>
+                    <td class="table-a">线程A：<br>(<span class="success-a">0</span>)</td>
+                    <td class="table-b">
+                        <div>
+                            <div class="dataA"></div>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="table-conf table-conf-a">检测到冲突！</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="table-c">
+                        <div>
+                            <div class="dataB"></div>
+                        </div>
+                    </td>
+                    <td class="table-a">：线程B<br>(<span class="success-b">0</span>)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="table-conf table-conf-b">检测到冲突！</td>
+                </tr>
+            </table> 
+        </div>
+        <button class="threadA-start">A发送</button>
+        <button class="threadB-start">B发送</button><br><br>
+        <ul></ul>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/default.js"></script>
+    </body>
+</html>
