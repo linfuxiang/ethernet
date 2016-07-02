@@ -232,7 +232,7 @@ $(function(){
                 hasSent = parseInt(dataA.css('marginLeft'));
                 threadA.status = 1;
             }
-        }, 5);
+        }, 25);
     });
 
     $('.threadB-start').one('click', function(){
@@ -329,7 +329,7 @@ $(function(){
                 hasSent = parseInt(dataB.css('marginLeft'));
                 threadB.status = 1;
             }
-        }, 5);
+        }, 25);
     });
     
 });
