@@ -85,16 +85,9 @@ $(function(){
         },
         checkConf : function(cla){
             if(cla == 'dataA'){
-                // if((dataB.width() > 0) && threadA.cutLength && (parseInt(dataB.css('marginLeft')) <= 0)){
                 if(parseInt(dataB.css('marginLeft')) <= 0){
                     return false;
                 }
-                // else if((dataB.width() > 0) && (parseInt(dataB.css('marginLeft')) <= 0)){
-                //     dataA.css({
-                //         marginLeft: -this.length + 'px'
-                //     });
-                //     return false;       //不可发送
-                // }
                 return true;
             }
             else if(cla == 'dataB'){
@@ -232,7 +225,7 @@ $(function(){
                 hasSent = parseInt(dataA.css('marginLeft'));
                 threadA.status = 1;
             }
-        }, 25);
+        }, 5);
     });
 
     $('.threadB-start').one('click', function(){
@@ -329,7 +322,7 @@ $(function(){
                 hasSent = parseInt(dataB.css('marginLeft'));
                 threadB.status = 1;
             }
-        }, 25);
+        }, 5);
     });
     
 });
